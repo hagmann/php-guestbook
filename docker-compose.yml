@@ -7,7 +7,7 @@ services:
     links:
      - db_phptraining
     volumes:
-     - ./app:/app
+     - ./app:/var/www/html
 
   db_phptraining:
     image: mariadb

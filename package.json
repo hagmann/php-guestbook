@@ -1,0 +1,19 @@
+{
+  "name": "phptraining",
+  "version": "1.0.0",
+  "description": "Linux + Apache + MariaDB (MySQL) + PHP 5 on Docker Compose. Mod_rewrite enabled by default.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hagmann/docker-lamp-php7.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hagmann/docker-lamp-php7/issues"
+  },
+  "homepage": "https://github.com/hagmann/docker-lamp-php7#readme"
+}
