@@ -3,7 +3,7 @@
 error_reporting(-1);
 ini_set('display_errors', 'On');
 
-$dsn = "mysql:host=db_phptraining;dbname=phpguestbook;charset=utf8";
+$dsn = "mysql:host=localhost;dbname=phpguestbook;charset=utf8";
 $dbuser = 'root';
 $dbpass = 'root';
 
