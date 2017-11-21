@@ -4,9 +4,9 @@ include_once('head.php'); ?>
 
 
 <?php
-if(empty($_SESSION['LoggedIn']) && empty($_SESSION['Username'])) //如果沒有登入
+if(empty($_SESSION['LoggedIn']) && empty($_SESSION['Username']))
 {
-	if(!empty($_POST['username']) && !empty($_POST['password'])) //如果表單帳號跟密碼沒有空白
+	if(!empty($_POST['username']) && !empty($_POST['password']))
 	{
 		$username = $_POST['username'];
 		$password = $_POST['password'];
@@ -17,7 +17,7 @@ if(empty($_SESSION['LoggedIn']) && empty($_SESSION['Username'])) //如果沒有�
 	    $stmt->bindParam(':name', $username);
 	    $stmt->execute();
 	    $result = $stmt->fetch();
-		if($result==false) //帳號沒重複 註冊成功
+		if($result==false)
 		{
 			require_once "config.php"; // use database
 			$sql = 'INSERT INTO users (username, email, password) VALUES(:username,:email,:password)';
@@ -32,7 +32,7 @@ if(empty($_SESSION['LoggedIn']) && empty($_SESSION['Username'])) //如果沒有�
 			<meta http-equiv="refresh" content="2;URL='index.php'">
 <?php
 		}
-		else //帳號重複
+		else
 		{
 			echo "<div>This username is already taken. Please try again.</div>";
 ?>
@@ -40,7 +40,7 @@ if(empty($_SESSION['LoggedIn']) && empty($_SESSION['Username'])) //如果沒有�
 <?php
 		}
 	}
-	else //如果表單帳號跟密碼有空白
+	else
 	{
 ?>
 		<div >
@@ -58,7 +58,7 @@ if(empty($_SESSION['LoggedIn']) && empty($_SESSION['Username'])) //如果沒有�
 <?php
 	}
 }
-else //如果有登入
+else
 {
 ?>
     <div class="error">You are already logged in!</div>

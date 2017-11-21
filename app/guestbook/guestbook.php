@@ -36,5 +36,5 @@ foreach ($db->query($sql) as $row) {
 
 <?php } ?>
 
-
+eamv
 <?php include_once('footer.php'); ?>
