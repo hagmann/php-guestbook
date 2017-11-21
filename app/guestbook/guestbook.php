@@ -3,7 +3,7 @@
 session_start();
 include_once('head.php'); ?>
 
-
+<h2>Gästebuch</h2>
 <form action="comment.php" method="post" data-abide novalidate>
     <label>
         Eintrag schreiben:

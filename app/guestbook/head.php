@@ -28,6 +28,7 @@ include_once('config.php'); ?>
         <ul class="vertical menu">
             <li><a href="index.php">Home</a></li>
             <li><a href="guestbook.php">Gästebuch</a></li>
+            <li><a href="kontakt.php">Kontakt</a></li>
             <?php if (!empty($_SESSION['LoggedIn']) && $_SESSION['LoggedIn'] == true) { ?>
                 <li><a href="register.php">Registrieren</a></li>
                 <li><a href="logout.php">Logout</a></li>
@@ -55,6 +56,7 @@ include_once('config.php'); ?>
 
                             <li><a href="index.php">Home</a></li>
                             <li><a href="guestbook.php">Gästebuch</a></li>
+                            <li><a href="kontakt.php">Kontakt</a></li>
                             <?php if (!empty($_SESSION['LoggedIn']) && $_SESSION['LoggedIn'] == true) { ?>
                                 <li><a href="register.php">Registrieren</a></li>
                                 <li><a href="logout.php">Logout</a></li>
